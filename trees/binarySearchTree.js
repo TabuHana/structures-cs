@@ -173,7 +173,7 @@ class BST {
     while (queue.length) {
       let curr = queue.shift();
 
-      result.push(curr);
+      result.push(curr.value);
 
       if (curr.left) {
         queue.push(curr.left);
@@ -198,6 +198,6 @@ bst.insert(39);
 
 
 console.log(bst.dfsInOrder());
-console.log(bst.dfsPostOrder());
 console.log(bst.dfsPreOrder());
+console.log(bst.dfsPostOrder());
 console.log(bst.bfs());
